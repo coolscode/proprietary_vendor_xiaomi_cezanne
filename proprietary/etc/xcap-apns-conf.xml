@@ -315,6 +315,14 @@
         protocol="IPV4V6"
         roaming_protocol="IPV4V6"
     />
+    <apn carrier="Xcap"
+        mcc="222"
+        mnc="07"
+        apn="xcap.kena.it"
+        type="xcap"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+    />
     <apn carrier="Vodafone IT"
         mcc="222"
         mnc="10"
@@ -1148,6 +1156,14 @@
         user="internet"
         password="internet"
         type="xcap"
+    />
+   <apn carrier="xcap"
+        mcc="280"
+        mnc="01"
+        apn="hos"
+        type="xcap"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
     />
     <apn carrier="xcap"
         mcc="284"
@@ -2642,6 +2658,14 @@
         type="xcap"
         protocol="IPV4V6"
         roaming_protocol="IPV4V6"
+    />
+    <apn carrier="hos"
+        mcc="604"
+        mnc="00"
+        apn="hos"
+        type="xcap"
+        protocol="IP"
+        roaming_protocol="IP"
     />
     <apn carrier="xcap"
         mcc="639"

@@ -855,8 +855,6 @@
         password="orange"
         type="default,supl"
         user="orange"
-        port="8000"
-        proxy="172.16.2.8"
         protocol="IP"
         roaming_protocol="IP"
         read_only="true"
@@ -1516,8 +1514,8 @@
         type="default,supl"
         mvno_match_data="Coriolis"
         mvno_type="spn"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
+        protocol="IP"
+        roaming_protocol="IP"
     />
 
     <apn carrier="mmscoriolis"
@@ -1530,8 +1528,8 @@
         type="mms"
         mvno_match_data="Coriolis"
         mvno_type="spn"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
+        protocol="IP"
+        roaming_protocol="IP"
     />
 
     <apn carrier="Orange World IMS"
@@ -2506,11 +2504,29 @@
         mmsport="8080"
         mmsproxy="10.138.255.5"
         password="telefonica"
-        type="default,mms"
+        type="default,supl,mms"
         user="telefonica"
         authtype="1"
         protocol="IPV4V6"
         roaming_protocol="IPV4V6"
+        network_type_bitmask="1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|19|20"
+    />
+
+    <apn carrier="Movistar MMS(wifi)"
+        mcc="214"
+        mnc="07"
+        apn="telefonica.es"
+        mmsc="http://mms.movistar.com"
+        mmsport="8080"
+        mmsproxy="10.138.255.5"
+        password="telefonica"
+        type="mms"
+        user="telefonica"
+        authtype="1"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+        network_type_bitmask="18"
+        user_visible="false"
     />
 
     <apn carrier="Movistar IMS"
@@ -3371,16 +3387,16 @@
                        8991870,8991871,8991872,8991873,8991874"
     />
 
-    <apn carrier="Kena Mobile Web"
+    <apn carrier="KENA MOBILE WEB"
         mcc="222"
         mnc="07"
         apn="web.kenamobile.it"
         type="default,supl"
-        protocol="IP"
-        roaming_protocol="IP"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
     />
 
-    <apn carrier="Kena Mobile MMS"
+    <apn carrier="KENA MOBILE MMS"
         mcc="222"
         mnc="07"
         apn="mms.kenamobile.it"
@@ -3388,8 +3404,17 @@
         mmsproxy="10.248.1.12"
         mmsport="80"
         mmsc="http://mms.kenamobile.it/"
-        protocol="IP"
-        roaming_protocol="IP"
+        protocol="IPV4V6"
+        roaming_protocol="IPV4V6"
+    />
+
+    <apn carrier="IMS"
+      mcc="222"
+      mnc="07"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
     />
 
     <apn carrier="FW WEB"
@@ -4855,81 +4880,6 @@
         roaming_protocol="IPV4V6"
     />
 
-    <apn carrier="0677 web"
-        mcc="232"
-        mnc="07"
-        apn="webaut"
-        type="default,supl"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
-        mvno_type="imsi"
-        mvno_match_data="23207718"
-    />
-
-    <apn carrier="0677 mms"
-        mcc="232"
-        mnc="07"
-        apn="mmsaut"
-        mmsc="http://mmsaut.at/send"
-        mmsproxy="212.95.31.50"
-        mmsport="80"
-        type="mms"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
-        mvno_type="imsi"
-        mvno_match_data="23207718"
-    />
-
-    <apn carrier="0677 web"
-        mcc="232"
-        mnc="07"
-        apn="webaut"
-        type="default,supl"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
-        mvno_type="imsi"
-        mvno_match_data="2320776"
-    />
-
-    <apn carrier="0677 mms"
-        mcc="232"
-        mnc="07"
-        apn="mmsaut"
-        mmsc="http://mmsaut.at/send"
-        mmsproxy="212.95.31.50"
-        mmsport="80"
-        type="mms"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
-        mvno_type="imsi"
-        mvno_match_data="2320776"
-    />
-
-    <apn carrier="0677 web"
-        mcc="232"
-        mnc="07"
-        apn="webaut"
-        type="default,supl"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
-        mvno_type="imsi"
-        mvno_match_data="23207799"
-    />
-
-    <apn carrier="0677 mms"
-        mcc="232"
-        mnc="07"
-        apn="mmsaut"
-        mmsc="http://mmsaut.at/send"
-        mmsproxy="212.95.31.50"
-        mmsport="80"
-        type="mms"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
-        mvno_type="imsi"
-        mvno_match_data="23207799"
-    />
-
     <apn carrier="Tele2 GPRS"
         mcc="232"
         mnc="09"
@@ -5036,6 +4986,36 @@
         mnc="13"
         apn="Internet.at.upcmobile.com"
         type="default,supl"
+    />
+
+    <apn carrier="Planet3"
+        mcc="232"
+        mnc="14"
+        apn="drei.at"
+        type="default,supl"
+        protocol="IP"
+        roaming_protocol="IP"
+    />
+
+    <apn carrier="Planet3"
+        mcc="232"
+        mnc="14"
+        apn="drei.at"
+        mmsproxy="213.94.78.133"
+        mmsport="8799"
+        mmsc="http://mmsc"
+        type="mms"
+        protocol="IP"
+        roaming_protocol="IP"
+    />
+
+    <apn carrier="IMS"
+        mcc="232"
+        mnc="14"
+        apn="ims"
+        type="ims"
+        protocol="IPV6"
+        roaming_protocol="IPV4V6"
     />
 
     <apn carrier="spusu"
@@ -5481,6 +5461,7 @@
         roaming_protocol="IP"
         mvno_type="gid"
         mvno_match_data="0305"
+        read_only="true"
     />
 
     <apn carrier="SMARTY"
@@ -5495,6 +5476,7 @@
         roaming_protocol="IP"
         mvno_type="gid"
         mvno_match_data="0309"
+        read_only="true"
     />
 
     <apn carrier="Superdrug"
@@ -5509,6 +5491,7 @@
         roaming_protocol="IP"
         mvno_type="gid"
         mvno_match_data="0310"
+        read_only="true"
     />
     <apn carrier="GAMMA"
         mcc="234"
@@ -5519,7 +5502,9 @@
         roaming_protocol="IP"
         mvno_type="gid"
         mvno_match_data="030B"
+        read_only="true"
     />
+
     <apn carrier="MMS"
         mcc="234"
         mnc="20"
@@ -5532,7 +5517,9 @@
         roaming_protocol="IP"
         mvno_type="gid"
         mvno_match_data="030B"
+        read_only="true"
     />
+
     <apn carrier="IMS"
         mcc="234"
         mnc="20"
@@ -9026,6 +9013,42 @@
         type="default,supl"
     />
 
+    <apn carrier="Internet"
+        mcc="262"
+        mnc="98"
+        apn="internet.v6.telekom"
+        authtype="1"
+        password="telekom"
+        type="default,supl"
+        user="telekom"
+        protocol="IPV4V6"
+        roaming_protocol="IP"
+    />
+
+    <apn carrier="HOS"
+        mcc="262"
+        mnc="98"
+        apn="hos"
+        authtype="1"
+        mmsc="http://mms.t-mobile.de/servlets/mms"
+        mmsport="8008"
+        mmsproxy="mmsproxy.telekom.de"
+        password="telekom"
+        type="mms"
+        user="telekom"
+        protocol="IPV4V6"
+        roaming_protocol="IP"
+    />
+
+    <apn carrier="IMS"
+      mcc="262"
+      mnc="98"
+      apn="ims"
+      type="ims"
+      protocol="IPV4V6"
+      roaming_protocol="IPV4V6"
+    />
+
     <apn carrier="LTE - Test Internet"
         mcc="262"
         mnc="800"
@@ -9360,16 +9383,6 @@
         roaming_protocol="IP"
         mvno_type="spn"
         mvno_match_data="Tango"
-    />
-
-    <apn carrier="Vox Mobile"
-        mcc="270"
-        mnc="99"
-        apn="vox.lu"
-        mmsc="http://mms.vox.lu"
-        mmsport="8080"
-        mmsproxy="212.88.139.44"
-        type="default,supl,mms"
     />
 
     <apn carrier="Orange Lux"
@@ -38204,29 +38217,45 @@
         roaming_protocol="IPV4V6"
     />
 
-    <apn carrier="中国电信 (China Telecom) GPRS"
+    <apn carrier="中国广电 (CBN) GPRS"
         mcc="460"
         mnc="13"
-        apn="ctnet"
-        user="ctnet@mycdma.cn"
-        password="vnet.mobi"
-        type="default,dun,xcap"
-        protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
+        apn="cmnet"
+        type="default,supl"
     />
 
-    <apn carrier="中国电信彩信 (China Telecom)"
+    <apn carrier="中国广电彩信 (CBN)"
         mcc="460"
         mnc="13"
-        apn="ctwap"
-        user="ctwap@mycdma.cn"
-        password="vnet.mobi"
-        mmsproxy="10.0.0.200"
+        apn="cmwap"
+        mmsc="http://mmsc.monternet.com"
         mmsport="80"
-        mmsc="http://mmsc.vnet.mobi"
+        mmsproxy="10.0.0.172"
+        port="80"
+        proxy="10.0.0.172"
         type="mms"
+    />
+
+    <apn carrier="中国广电 (CBN) IMS"
+        mcc="460"
+        mnc="13"
+        apn="ims"
+        type="ims"
         protocol="IPV4V6"
-        roaming_protocol="IPV4V6"
+    />
+
+    <apn carrier="中国广电 (CBN) GPRS"
+        mcc="460"
+        mnc="15"
+        apn="cbnet"
+        type="default,supl"
+    />
+    <apn carrier="中国广电 (CBN) IMS"
+        mcc="460"
+        mnc="15"
+        apn="ims"
+        type="ims"
+        protocol="IPV4V6"
     />
 
     <apn carrier="CMCC Internet"
@@ -40904,6 +40933,15 @@
         roaming_protocol="IP"
     />
 
+    <apn carrier="ims"
+        mcc="604"
+        mnc="00"
+        apn="ims"
+        type="ims"
+        protocol="IP"
+        roaming_protocol="IP"
+    />
+
     <apn carrier="Internet Mobile"
         mcc="604"
         mnc="01"
@@ -43162,6 +43200,16 @@
         mnc="10"
         apn="ims"
         type="ims"
+        protocol="IP"
+        roaming_protocol="IP"
+        read_only ="true"
+    />
+
+    <apn carrier="MTN SOS"
+        mcc="655"
+        mnc="10"
+        apn="sos"
+        type="emergency"
         protocol="IP"
         roaming_protocol="IP"
         read_only ="true"
@@ -45637,6 +45685,13 @@
         password=""
         type="mms"
         user=""
+    />
+
+    <apn carrier="Entel"
+        mcc="736"
+        mnc="02"
+        apn="4g.entel"
+        type="default,supl"
     />
 
     <apn carrier="ENTEL WAP GPRS"
